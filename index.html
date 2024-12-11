@@ -1,144 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto - El Niño Curioso</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: black;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: #333;
+        }
+        header {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgb(42, 209, 19);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product-image {
+            text-align: center;
+        }
+        .product-image img {
+            max-width: 50%;
+            border-radius: 8px;
+        }
+        .product-details {
+            margin-top: 20px;
+        }
+        .product-details h1 {
+            color: red;
+        }
+        .product-details p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .product-price {
+            font-size: 24px;
+            color: blue;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .additional-info {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .additional-info h2 {
+            color: red;
+            margin-bottom: 10px;
+        }
+        .additional-info ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .additional-info ul li {
+            margin: 5px 0;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: orange;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+        }
+        .buttons a:hover {
+            background-color: blue;
+        }
 
-    header {
-      background-color: blue;
-      color: white;
-      text-align: center;
+    /* Footer */
+    .footer {
       padding: 20px;
-    }
-
-    header h1 {
-      margin: 0;
-    }
-
-    .contact-container {
-      width: 70%;
-      margin: 30px auto;
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .contact-container h2 {
       text-align: center;
-      color: #2c3e50;
-      margin-bottom: 20px;
+      background: rgb(15, 173, 36);
+      color: black;
     }
 
-    .contact-info {
-      margin-bottom: 30px;
-    }
-
-    .contact-info p {
-      font-size: 1rem;
-      margin: 5px 0;
-      color: #333;
-    }
-
-    .contact-info a {
-      color: #27ae60;
-      text-decoration: none;
-    }
-
-    .contact-info a:hover {
-      text-decoration: underline;
-    }
-
-    .form-container {
-      margin-top: 20px;
-    }
-
-    .form-container label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: bold;
-    }
-
-    .form-container input, .form-container textarea, .form-container button, .form-container select {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-    }
-
-    .form-container button {
-      background-color: #27ae60;
+    .footer p {
       color: white;
-      border: none;
-      cursor: pointer;
     }
-
-    .form-container button:hover {
-      background-color: #1e8449;
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: rgb(15, 173, 36);
-      color: white;
-      margin-top: 30px;
-    }
-  </style>
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Detalles del Producto</h1>
+    </header>
+    <div class="container">
+        <!-- Imagen del producto -->
+        <div class="product-image">
+            <img src="IMG/Construcion.webp" alt="Imagen del Producto">
+        </div>
 
-<header>
-  <h1>Contacto - El Niño Curioso</h1>
-</header>
-
-<div class="contact-container">
-  <h2>¿Tienes dudas o necesitas ayuda?</h2>
-  <div class="contact-info">
-    <p><strong>Teléfono:</strong> <a href="tel:+522881088844">+52 288 108 88 44</a></p>
-    <p><strong>Correo Electrónico:</strong> <a href="mailto:tmtrebook@gmail.com">tmtrebook@gmail.com</a></p>
-    <p><strong>Dirección:</strong> Av. Leyes de Reforma #19, Carlos A. Carrillo Centro, Carlos A. Carrillo, CP 95330</p>
-    <p><strong>Horario de Atención:</strong> Lunes a Viernes: 9:00 AM - 6:00 PM</p>
-  </div>
-
-  <h2>Formulario de Contacto</h2>
-  <div class="form-container">
-    <form action="Gracias por tu comentario.html" method="GET">
-      <label for="nombre">Nombre Completo:</label>
-      <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
-
-      <label for="email">Correo Electrónico:</label>
-      <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico" required>
-
-      <label for="motivo">Motivo de Contacto:</label>
-      <select id="motivo" name="motivo" required>
-        <option value="">Selecciona un motivo</option>
-        <option value="duda">Dudas sobre productos</option>
-        <option value="garantia">Devoluciones o garantía</option>
-        <option value="otro">Otro</option>
-      </select>
-
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí tu mensaje" required></textarea>
-
-      <button type="Gracias por tu comentario.html">Enviar Mensaje</button>
-    </form>
-  </div>
+        <!-- Detalles del producto -->
+<div class="product-details">
+    <h1>LEGO Clasico - Ideas Creativas</h1>
+    <p>Inspira la creatividad de los pequeños constructores con este set LEGO Clasico. Diseñado para fomentar la imaginación, este set incluye una amplia variedad de bloques de colores brillantes para crear cualquier cosa que los niños puedan imaginar.</p>
+    <p class="product-price">$150.00</p>
 </div>
 
-<footer>
-  <p>&copy; 2024 El Niño Curioso. Todos los derechos reservados.</p>
-</footer>
+<!-- Información adicional -->
+<div class="additional-info">
+    <h2>Información del Producto</h2>
+    <ul>
+        <li><strong>Contenido del producto:</strong> Más de 500 piezas LEGO en varios colores y formas.</li>
+        <li><strong>Edad recomendada:</strong> A partir de 4 años.</li>
+        <li><strong>Material:</strong> Plástico ABS de alta calidad, seguro para los niños.</li>
+        <li><strong>Categoría:</strong> Juguetes de construcción y creatividad.</li>
+        <li><strong>Garantía:</strong> 12 meses contra defectos de fabricación.</li>
+        <li><strong>Incluye:</strong> Manual de ideas creativas con diseños como un loro, guitarra, flor y más.</li>
+        <li><strong>Beneficios:</strong> Fomenta la imaginación, mejora la motricidad fina y desarrolla habilidades para resolver problemas.</li>
+        <li><strong>Dimensiones del empaque:</strong> 35 cm x 20 cm x 7 cm.</li>
+        <li><strong>Colores disponibles:</strong> Bloques en colores rojo, amarillo, azul, verde, naranja, y más.</li>
+    </ul>
+</div>
 
+
+        <!-- Botones de acción -->
+        <div class="buttons">
+            <a href="prueba de variedad de productos.html">Volver a Productos</a>
+            <a href="contacto original.html">Comprar Ahora</a>
+        </div>
+    </div>
+    <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2024 El Niño Curioso | Todos los derechos reservados</p>
+    <p>Dirección: Av. Leyes de Reforma #19, Carlos A. Carrillo Centro, Carlos A. Carrillo, CP 95330</p>
+    <p>Telefono:<br> <a href="tel:+522881088844">+52 288 108 88 44</a> </p>
+    <p>Correo electrónico: <br> <a href="tmtrebook@gmail.com"> tmtrebook@gmail.com</a></p>
+  </div>
 </body>
 </html>
